@@ -15,7 +15,7 @@ class PyTest(Command):
         errno = subprocess.call(['py.test'])
         raise SystemExit(errno)
 
-name = 'flashtext'
+name = 'flashtext_ex'
 version = '2.7'
 
 cmdclass = {'test': PyTest}
@@ -29,7 +29,7 @@ except ImportError:
 setup(
     name=name,
     version=version,
-    url='http://github.com/vi3k6i5/flashtext',
+    url='http://github.com/shenfe/flashtext',
     author='Vikash Singh',
     author_email='vikash.duliajan@gmail.com',
     description='Extract/Replaces keywords in sentences.',
